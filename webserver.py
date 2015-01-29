@@ -2,8 +2,8 @@
 import socket    
 
 serverSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-serverSocket.bind(("", 6789))
-serverSocket.listen(1)
+serverSocket.bind(("", 80))
+serverSocket.listen(5)
 
 while True:
 	print 'Server pronto...'
