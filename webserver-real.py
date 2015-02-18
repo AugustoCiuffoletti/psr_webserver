@@ -1,7 +1,5 @@
 #!/usr/bin/python
-import SimpleHTTPServer
-import SocketServer
-
+import SimpleHTTPServer, SocketServer
 Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 httpd = SocketServer.TCPServer(("", 80), Handler)
 print "Server pronto..."
